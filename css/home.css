@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Out';
+    src: url('../fonts/Outfit-Regular.ttf') format('truetype');
+
+  }
+  @font-face {
+    font-family: 'OutL';
+    src: url('../fonts/Outfit-Light.ttf') format('truetype');
+
+  }
+
+
+  body {
+    background-image: url("../imgs/Fundo.png");
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Fixa a imagem de fundo à janela de visualização */
+}
+
+
+nav {
+    background-color: #2A1A4B;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Estilo para os itens do menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0 15px;
+    font-family: 'Out';
+}
+
+/* Estilo para os links do menu */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.buttoncad  {
+    position:absolute;
+    right:4rem;
+    border:none;
+    border-radius:5px;
+    font-family: 'Out';
+    background-color:#170E2B;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    top:1rem;
+    font-size: 15px;
+ 
+}
+
+.buttoncad:hover{
+    transition: all 0.1s ease;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.titlehome  {
+    font-family: 'Out';
+    color: white;
+    font-size: 3rem;
+    margin-top:22rem;
+    margin-left:25rem;
+}
+
+.titlecontato {
+    position: absolute;
+    font-family: 'OutL';
+    color: white;
+    font-size: 3rem;
+    margin-top:-8rem;
+    margin-left:52.5rem;
+}
+
+
+.table{
+    margin-top: 15rem;
+    font-family: 'Out';
+    color: black;
+    border: black;
+    background-color: white;
+    width: 30rem;
+    font-size: 20px;
+    height: 20rem;
+    margin-left: 35rem;
+}
+

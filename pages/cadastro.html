@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <img src="../imgs/CapitalizeLogo.png" alt="Logo" style="position:absolute;margin-top: -1rem;margin-left:-45rem;">
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="contatos.html">Contato</a></li>
+        <li><a href="#">Recursos</a></li>
+        
+        <li><a href="cadastro.html" class="buttoncad">Cadastrar-se</a></li>
+    </ul>
+</nav>
+
+    <style>
+        body {
+            font-family:'OutL';
+            color: #ffffff;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 5rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 7px;
+            border: none;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 1rem;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+        background-color: #533592;
+        transform: scale(1.1);
+        transition: all 0.1s ease;
+        cursor: pointer;
+        }
+        .data{
+        height: 2.3rem;
+        width: 26.2rem;
+        border-radius: 7px;
+        border: none;
+    }
+
+        .genero{
+        margin-bottom: 5px;
+        }
+
+        .cadastro{
+        margin-left: 4rem;
+        font-size: 3rem;
+        }
+
+        .registrar{
+        margin-top: 2rem !important;
+        width: 26.2rem;
+        border-radius: 7px;
+        color: #ffffff;
+        background-color: #170E2B;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="cadastro">Cadastrar-se</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label class="genero">Gênero:</label>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                    <label for="outro">Outro</label>
+            </div>
+            <div class="form-group">
+                <label for="date">Data de Nascimento:</label>
+                <input type="date" id="date" name="date" class="data" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Endereço de E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button class="registrar" type="submit">Registrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
